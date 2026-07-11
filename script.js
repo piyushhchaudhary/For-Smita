@@ -6,6 +6,7 @@ window.onload = function () {
 
         welcome.style.opacity = "0";
 document.getElementById("scene2").style.display = "block";
+   welcome.style.display = "none";
     }, 3000);
 
 };
