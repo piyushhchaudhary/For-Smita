@@ -96,6 +96,11 @@ animation:welcomeGlow 2.5s ease-in-out infinite alternate;
     animation:float 3s ease-in-out infinite;
 backdrop-filter: blur(10px);
 border:1px solid rgba(255,255,255,.25);
+    transition: transform .3s ease, box-shadow .3s ease;
+}
+#envelope:hover{
+    box-shadow:
+    0 0 40px rgba(255,105,180,.8);
 }
 
 #heart{
@@ -135,7 +140,9 @@ border:1px solid rgba(255,255,255,.25);
 
     border-radius:15px;
 
-    box-shadow:0 0 20px rgba(255,255,255,.5);
+    box-shadow:
+0 15px 40px rgba(0,0,0,.35),
+0 0 25px rgba(255,182,193,.35);
 text-align:center;
 line-height:1.8;
 font-size:18px;
