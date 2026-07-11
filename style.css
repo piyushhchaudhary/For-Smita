@@ -90,3 +90,57 @@ body{
     inset:0;
     display:none;
 }
+#scene2{
+    position:fixed;
+    inset:0;
+    display:none;
+
+    justify-content:center;
+    align-items:center;
+}
+
+#envelope{
+
+    width:280px;
+    height:190px;
+
+    background:#ff6fa8;
+
+    border-radius:18px;
+
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+
+    color:white;
+
+    box-shadow:0 0 30px rgba(255,105,180,.7);
+
+    animation:floatEnvelope 3s ease-in-out infinite;
+
+}
+
+#heart{
+
+    font-size:40px;
+
+    animation:heartbeat 1s infinite;
+
+}
+
+@keyframes heartbeat{
+
+0%{transform:scale(1);}
+50%{transform:scale(1.2);}
+100%{transform:scale(1);}
+
+}
+
+@keyframes floatEnvelope{
+
+0%{transform:translateY(0);}
+50%{transform:translateY(-12px);}
+100%{transform:translateY(0);}
+
+}
