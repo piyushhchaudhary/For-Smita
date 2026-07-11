@@ -10,3 +10,8 @@ document.getElementById("scene2").style.display = "flex";
     }, 3000);
 
 };
+function openEnvelope(){
+
+    alert("💌 Smita, a surprise is waiting for you ❤️");
+
+}
