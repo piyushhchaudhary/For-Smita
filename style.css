@@ -26,6 +26,7 @@ body{
     radial-gradient(circle,white 1px,transparent 1px) 0 0/60px 60px,
     radial-gradient(circle,#ffd6f2 1px,transparent 1px) 30px 30px/90px 90px;
     animation:twinkle 3s ease-in-out infinite alternate;
+    filter: drop-shadow(0 0 3px rgba(255,255,255,.6));
 }
 
 @keyframes twinkle{
@@ -53,6 +54,8 @@ body{
         0 0 40px hotpink;
     opacity:1;
 transition:opacity 1.5s ease;
+    letter-spacing:2px;
+animation:welcomeGlow 2.5s ease-in-out infinite alternate;
 }
 
 /* ---------- SCENE 2 ---------- */
@@ -138,4 +141,20 @@ transition:opacity 1.5s ease;
     opacity:0;
     transform:scale(1.1);
     transition:all .8s ease;
+}
+@keyframes welcomeGlow{
+
+0%{
+text-shadow:
+0 0 10px #fff,
+0 0 20px #ff9ad5;
+}
+
+100%{
+text-shadow:
+0 0 18px #fff,
+0 0 35px #ff69b4,
+0 0 60px #ff69b4;
+}
+
 }
