@@ -19,9 +19,9 @@ function openEnvelope(){
 
     setTimeout(function(){
 
-        envelope.style.display = "none";
-        letter.style.display = "block";
+    envelope.style.display = "none";
+    letter.style.display = "block";
 
-    },800);
+    typeLetter();
 
-}
+},800);
