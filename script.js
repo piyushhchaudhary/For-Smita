@@ -12,6 +12,8 @@ document.getElementById("scene2").style.display = "flex";
 };
 function openEnvelope(){
 
-    alert("💌 Smita, a surprise is waiting for you ❤️");
+    const envelope = document.getElementById("envelope");
+
+    envelope.classList.add("open");
 
 }
