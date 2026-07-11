@@ -51,7 +51,7 @@ function typeLetter() {
 }
 
 function openEnvelope() {
-
+alert("Envelope clicked!");
     const envelope = document.getElementById("envelope");
     const letter = document.getElementById("letter");
 
