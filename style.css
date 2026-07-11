@@ -130,7 +130,7 @@ border:1px solid rgba(255,255,255,.25);
 
     display:none;
 
-    width:330px;
+    width:min(330px,90vw);
 
     background:white;
 
