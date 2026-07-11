@@ -144,3 +144,8 @@ body{
 100%{transform:translateY(0);}
 
 }
+.open{
+    transform:scale(1.1) rotateX(25deg);
+    transition:all 0.8s ease;
+    opacity:0;
+}
