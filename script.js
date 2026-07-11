@@ -61,8 +61,9 @@ function typeLetter() {
 
     const typing = setInterval(() => {
 
-        text.innerHTML += message.charAt(index);
-
+        text.innerHTML += message.charAt(index) === "\n"
+    ? "<br>"
+    : message.charAt(index); 
         index++;
 
         if (index >= message.length) {
