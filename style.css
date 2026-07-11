@@ -85,3 +85,8 @@ body{
         transform:scale(1);
     }
 }
+#scene2{
+    position:fixed;
+    inset:0;
+    display:none;
+}
