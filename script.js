@@ -16,3 +16,19 @@ window.onload = function () {
 
 }, 3000);
 };        
+
+function openEnvelope() {
+
+    const envelope = document.getElementById("envelope");
+    const letter = document.getElementById("letter");
+
+    envelope.classList.add("open");
+
+    setTimeout(() => {
+
+        envelope.style.display = "none";
+        letter.style.display = "block";
+
+    }, 800);
+
+}
