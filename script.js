@@ -5,7 +5,7 @@ window.onload = function () {
     setTimeout(function () {
 
         welcome.style.opacity = "0";
-document.getElementById("scene2").style.display = "block";
+document.getElementById("scene2").style.display = "flex";
    welcome.style.display = "none";
     }, 3000);
 
