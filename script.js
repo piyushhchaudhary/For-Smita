@@ -6,7 +6,7 @@ window.onload = function () {
 
         welcome.style.opacity = "0";
 document.getElementById("scene2").style.display = "flex";
-   welcome.style.display = "none";
+ // welcome.style.display = "none";
     }, 3000);
 
 };
