@@ -5,9 +5,14 @@ window.onload = function () {
 
     setTimeout(() => {
 
+    welcome.style.opacity = "0";
+
+    setTimeout(() => {
+
         welcome.style.display = "none";
         scene2.style.display = "flex";
 
-    }, 3000);
+    }, 1500);
 
+}, 3000);
 };        
