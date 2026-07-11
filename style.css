@@ -94,7 +94,8 @@ animation:welcomeGlow 2.5s ease-in-out infinite alternate;
     box-shadow:0 0 30px rgba(255,105,180,.6);
 
     animation:float 3s ease-in-out infinite;
-
+backdrop-filter: blur(10px);
+border:1px solid rgba(255,255,255,.25);
 }
 
 #heart{
@@ -135,7 +136,11 @@ animation:welcomeGlow 2.5s ease-in-out infinite alternate;
     border-radius:15px;
 
     box-shadow:0 0 20px rgba(255,255,255,.5);
-
+text-align:center;
+line-height:1.8;
+font-size:18px;
+background:#fffdf8;
+border:2px solid rgba(255,182,193,.4);
 }
 .open{
     opacity:0;
@@ -157,4 +162,7 @@ text-shadow:
 0 0 60px #ff69b4;
 }
 
+}
+#envelope:active{
+    transform:scale(.96);
 }
