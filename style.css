@@ -133,3 +133,8 @@ transition:opacity 1.5s ease;
     box-shadow:0 0 20px rgba(255,255,255,.5);
 
 }
+.open{
+    opacity:0;
+    transform:scale(1.1);
+    transition:all .8s ease;
+}
