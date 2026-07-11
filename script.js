@@ -5,7 +5,7 @@ window.onload = function () {
     setTimeout(function () {
 
         welcome.style.opacity = "0";
-
+document.getElementById("scene2").style.display = "block";
     }, 3000);
 
 };
