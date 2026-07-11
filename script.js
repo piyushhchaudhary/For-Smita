@@ -1,6 +1,11 @@
-// Journey To Smita ❤️
-// Created by Piyush
-
 window.onload = function () {
-    console.log("Website Loaded Successfully ❤️");
+
+    const welcome = document.getElementById("welcome");
+
+    setTimeout(function () {
+
+        welcome.style.opacity = "0";
+
+    }, 3000);
+
 };
