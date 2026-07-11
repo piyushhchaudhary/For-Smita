@@ -28,7 +28,7 @@ function openEnvelope() {
 
         envelope.style.display = "none";
         letter.style.display = "block";
-
+typeLetter();
     }, 800);
 
 }
