@@ -50,6 +50,8 @@ body{
         0 0 10px white,
         0 0 20px hotpink,
         0 0 40px hotpink;
+    opacity:1;
+transition:opacity 1.5s ease;
 }
 
 /* ---------- SCENE 2 ---------- */
