@@ -65,6 +65,8 @@ body{
     color:white;
     font-size:36px;
     font-weight:bold;
+    animation: fadeIn 2s ease-in-out;
+    
 
     text-shadow:
         0 0 10px white,
