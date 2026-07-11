@@ -173,3 +173,44 @@ text-shadow:
 #envelope:active{
     transform:scale(.96);
 }
+/* ---------- MOON ---------- */
+
+#moon{
+    position:fixed;
+
+    top:40px;
+    right:40px;
+
+    width:90px;
+    height:90px;
+
+    border-radius:50%;
+
+    background:
+    radial-gradient(circle at 30% 30%,
+    #ffffff,
+    #fef7d7 55%,
+    #f5e6a8 100%);
+
+    box-shadow:
+    0 0 30px rgba(255,255,220,.8),
+    0 0 70px rgba(255,255,220,.35);
+
+    z-index:1;
+
+    animation:moonGlow 4s ease-in-out infinite alternate;
+}
+
+@keyframes moonGlow{
+
+    from{
+        transform:scale(1);
+        opacity:.95;
+    }
+
+    to{
+        transform:scale(1.05);
+        opacity:1;
+    }
+
+}
