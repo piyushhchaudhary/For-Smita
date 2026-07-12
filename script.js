@@ -72,7 +72,7 @@ function typeLetter() {
 
     document.getElementById("letter").style.display = "none";
 
-    document.getElementById("gallery").style.display = "flex";
+    document.getElementById("gallery").style.display = "block";
 
 }, 2000);
         }
