@@ -116,3 +116,24 @@ document.getElementById("proposalScene").style.display = "flex";
 
 }   // <-- Ye nextPhoto() ko close karega
 
+// YES Button
+document.getElementById("yesBtn").onclick = function(){
+
+    alert("Yayyyy ❤️🥹");
+
+};
+
+// NO Button Bhaagega
+const noBtn = document.getElementById("noBtn");
+
+noBtn.addEventListener("mouseover", function(){
+
+    const x = Math.random() * (window.innerWidth - 120);
+
+    const y = Math.random() * (window.innerHeight - 70);
+
+    noBtn.style.position = "fixed";
+    noBtn.style.left = x + "px";
+    noBtn.style.top = y + "px";
+
+});
