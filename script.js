@@ -117,3 +117,24 @@ document.getElementById("castleScene").style.display = "block";
 
 
 }
+function helpPrince(){
+
+    const hair = document.getElementById("hair");
+    const prince = document.getElementById("prince");
+    const button = document.getElementById("helpBtn");
+
+    // Button hide
+    button.style.display = "none";
+
+    // Hair grows
+    hair.style.height = "340px";
+
+    // Prince climbs
+    setTimeout(()=>{
+
+        prince.style.left = "72%";
+        prince.style.bottom = "360px";
+
+    },1000);
+
+}
