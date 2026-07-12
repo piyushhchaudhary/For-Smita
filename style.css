@@ -420,3 +420,55 @@ transform:translateY(0) rotate(-3deg);
     border:2px solid #ff5fa2;
     position:relative;
 }
+/* ---------- FINAL SCENE ---------- */
+
+#finalScene{
+    display:none;
+    position:fixed;
+    inset:0;
+
+    justify-content:center;
+    align-items:center;
+    flex-direction:column;
+
+    background:linear-gradient(135deg,#ffb6d9,#ffdff0);
+
+    z-index:100;
+
+    overflow:hidden;
+}
+
+#finalScene h1{
+
+    font-size:48px;
+    color:#ff2d7a;
+
+    text-shadow:
+    0 0 15px rgba(255,255,255,.9),
+    0 0 30px hotpink;
+
+    animation:pop 1s infinite alternate;
+}
+
+#finalScene h2{
+
+    margin-top:20px;
+
+    color:#6b2b4d;
+
+    font-size:24px;
+
+    text-align:center;
+}
+
+@keyframes pop{
+
+    from{
+        transform:scale(1);
+    }
+
+    to{
+        transform:scale(1.08);
+    }
+
+}
