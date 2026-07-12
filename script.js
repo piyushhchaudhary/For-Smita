@@ -1,4 +1,4 @@
-alert("Script Loaded");
+
 window.onload = function () {
 
     const welcome = document.getElementById("welcome");
@@ -29,7 +29,7 @@ function openEnvelope() {
 
         envelope.style.display = "none";
         letter.style.display = "block";
-        alert("Envelope opened");
+        
 typeLetter();
     }, 800);
 
@@ -70,7 +70,7 @@ function typeLetter() {
 
         if (index >= message.length) {
             clearInterval(typing);
-            alert("Letter Finished");
+            
             setTimeout(() => {
 
    document.getElementById("letter").style.display = "none";
