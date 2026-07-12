@@ -704,3 +704,50 @@ transform:translateY(0) rotate(-3deg);
     }
 
 }
+/* ---------- CONFETTI ---------- */
+
+#confetti{
+
+    position:absolute;
+
+    inset:0;
+
+    overflow:hidden;
+
+    pointer-events:none;
+
+}
+
+.confetti{
+
+    position:absolute;
+
+    width:10px;
+
+    height:10px;
+
+    border-radius:50%;
+
+    animation:confettiFall 4s linear forwards;
+
+}
+
+@keyframes confettiFall{
+
+    from{
+
+        transform:translateY(-50px) rotate(0deg);
+
+        opacity:1;
+
+    }
+
+    to{
+
+        transform:translateY(110vh) rotate(720deg);
+
+        opacity:0;
+
+    }
+
+}
