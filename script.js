@@ -110,10 +110,10 @@ function nextPhoto(){
 
     }else{
 
-        document.getElementById("gallery").style.display = "none";
+     document.getElementById("gallery").style.display = "none";
 
-        // Agle step me proposal show karenge
+document.getElementById("castleScene").style.display = "block";   
+        
 
-    }
 
 }
