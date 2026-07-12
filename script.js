@@ -1,3 +1,4 @@
+alert("Script Loaded");
 window.onload = function () {
 
     const welcome = document.getElementById("welcome");
