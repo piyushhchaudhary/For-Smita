@@ -119,16 +119,13 @@ document.getElementById("proposalScene").style.display = "flex";
 // YES Button
 window.addEventListener("load", function(){
 
-    document.getElementById("yesBtn").onclick = function(){
+ document.getElementById("yesBtn").onclick = function(){
 
     document.getElementById("proposalScene").style.display = "none";
 
-    document.getElementById("finalScene").style.display = "flex";
+    document.getElementById("oneMoreScene").style.display = "flex";
 
-    startHeartRain();
-
-};
-
+};   
     
 
 });
