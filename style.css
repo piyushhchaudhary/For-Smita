@@ -472,3 +472,23 @@ transform:translateY(0) rotate(-3deg);
     }
 
 }
+#heartRain{
+    position:absolute;
+    inset:0;
+    overflow:hidden;
+    pointer-events:none;
+}
+
+@keyframes fall{
+
+    from{
+        transform:translateY(-50px);
+        opacity:1;
+    }
+
+    to{
+        transform:translateY(110vh);
+        opacity:0;
+    }
+
+}
