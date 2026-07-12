@@ -214,3 +214,45 @@ text-shadow:
     }
 
 }
+/* ---------- BUTTERFLIES ---------- */
+
+#butterflies{
+    position:absolute;
+    inset:0;
+    pointer-events:none;
+    overflow:hidden;
+}
+
+.butterfly{
+    position:absolute;
+    width:32px;
+    height:32px;
+
+    animation:
+    fly 12s linear infinite,
+    flap .35s ease-in-out infinite alternate;
+}
+
+@keyframes flap{
+
+    from{
+        transform:scaleX(1);
+    }
+
+    to{
+        transform:scaleX(.82);
+    }
+
+}
+
+@keyframes fly{
+
+    0%{
+        transform:translate(-80px,80vh);
+    }
+
+    100%{
+        transform:translate(110vw,-120px);
+    }
+
+}
