@@ -196,7 +196,7 @@ function showReel(){
         document.getElementById("finalScene").style.display = "flex";
 
         startHeartRain();
-
+startConfetti();
     };
 
 }
