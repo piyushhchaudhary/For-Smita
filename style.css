@@ -580,3 +580,53 @@ transform:translateY(0) rotate(-3deg);
     transform:scale(.96);
 
 }
+/* ---------- REEL SCENE ---------- */
+
+#reelScene{
+
+    display:none;
+
+    position:fixed;
+    inset:0;
+
+    justify-content:center;
+    align-items:center;
+    flex-direction:column;
+
+    background:#ffe4ec;
+
+    z-index:60;
+
+}
+
+.reelCard{
+
+    background:white;
+
+    padding:20px;
+
+    border-radius:25px;
+
+    box-shadow:0 15px 40px rgba(0,0,0,.2);
+
+    text-align:center;
+
+}
+
+.reelCard h2{
+
+    color:#ff5c9a;
+
+    margin-bottom:20px;
+
+}
+
+#loveReel{
+
+    width:min(320px,90vw);
+
+    border-radius:18px;
+
+    border:6px solid white;
+
+}
