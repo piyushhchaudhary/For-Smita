@@ -355,3 +355,68 @@ transform:translateY(0) rotate(-3deg);
 
 }
 
+/* ---------- PROPOSAL SCENE ---------- */
+
+#proposalScene{
+    display:none;
+    position:fixed;
+    inset:0;
+    justify-content:center;
+    align-items:center;
+    z-index:10;
+    background:linear-gradient(180deg,#ffd6ec,#fff0f7);
+}
+
+.proposalCard{
+    width:min(360px,90vw);
+    padding:30px;
+    text-align:center;
+    background:rgba(255,255,255,.75);
+    backdrop-filter:blur(15px);
+    border-radius:25px;
+    box-shadow:0 15px 35px rgba(255,105,180,.25);
+}
+
+.proposalCard h1{
+    color:#ff4f8b;
+    margin-bottom:20px;
+    font-size:32px;
+}
+
+#proposalText{
+    color:#555;
+    line-height:1.8;
+    font-size:18px;
+}
+
+.proposalButtons{
+    margin-top:30px;
+    display:flex;
+    justify-content:center;
+    gap:20px;
+}
+
+.proposalButtons button{
+    border:none;
+    padding:12px 28px;
+    border-radius:30px;
+    font-size:18px;
+    cursor:pointer;
+    transition:.3s;
+}
+
+#yesBtn{
+    background:#ff5fa2;
+    color:white;
+}
+
+#yesBtn:hover{
+    transform:scale(1.08);
+}
+
+#noBtn{
+    background:white;
+    color:#ff5fa2;
+    border:2px solid #ff5fa2;
+    position:relative;
+}
