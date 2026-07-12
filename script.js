@@ -120,8 +120,14 @@ document.getElementById("proposalScene").style.display = "flex";
 window.addEventListener("load", function(){
 
     document.getElementById("yesBtn").onclick = function(){
-        alert("Yayyyy ❤️🥹");
-    };
+
+    document.getElementById("proposalScene").style.display = "none";
+
+    document.getElementById("finalScene").style.display = "flex";
+
+    startHeartRain();
+
+};
 
     
 
@@ -144,4 +150,29 @@ function moveNoButton(){
 noBtn.addEventListener("mouseover", moveNoButton);
 noBtn.addEventListener("touchstart", moveNoButton);
 noBtn.addEventListener("click", moveNoButton);
+function startHeartRain(){
 
+    const container = document.getElementById("heartRain");
+
+    setInterval(()=>{
+
+        const heart = document.createElement("div");
+
+        heart.innerHTML = "❤️";
+
+        heart.style.position = "absolute";
+        heart.style.left = Math.random()*100 + "vw";
+        heart.style.top = "-50px";
+        heart.style.fontSize = (20 + Math.random()*30) + "px";
+
+        heart.style.animation = "fall 5s linear forwards";
+
+        container.appendChild(heart);
+
+        setTimeout(()=>{
+            heart.remove();
+        },5000);
+
+    },250);
+
+        }
