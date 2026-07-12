@@ -256,3 +256,100 @@ text-shadow:
     }
 
 }
+/* ---------- GALLERY ---------- */
+
+#gallery{
+    display:none;
+    position:fixed;
+    inset:0;
+
+    justify-content:center;
+    align-items:center;
+
+    z-index:5;
+}
+
+.polaroid{
+
+    width:min(320px,90vw);
+
+    background:white;
+
+    padding:15px 15px 25px;
+
+    border-radius:18px;
+
+    box-shadow:
+    0 15px 40px rgba(0,0,0,.18);
+
+    transform:rotate(-3deg);
+
+    animation:photoFloat 3s ease-in-out infinite;
+}
+
+.polaroid img{
+
+    width:100%;
+
+    border-radius:12px;
+
+    display:block;
+}
+
+.polaroid p{
+
+    text-align:center;
+
+    margin:18px 0;
+
+    color:#555;
+
+    font-size:17px;
+
+    line-height:1.6;
+}
+
+#nextPhoto{
+
+    display:block;
+
+    margin:auto;
+
+    border:none;
+
+    background:#ff8fbc;
+
+    color:white;
+
+    padding:12px 28px;
+
+    border-radius:30px;
+
+    font-size:16px;
+
+    cursor:pointer;
+
+    transition:.3s;
+}
+
+#nextPhoto:active{
+
+    transform:scale(.96);
+
+}
+
+@keyframes photoFloat{
+
+0%{
+transform:translateY(0) rotate(-3deg);
+}
+
+50%{
+transform:translateY(-8px) rotate(-2deg);
+}
+
+100%{
+transform:translateY(0) rotate(-3deg);
+}
+
+}
