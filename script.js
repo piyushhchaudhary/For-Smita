@@ -107,17 +107,17 @@ function nextPhoto(){
         document.getElementById("photo").src = photos[currentPhoto];
 
         document.getElementById("caption").innerHTML = captions[currentPhoto];
+}else{
 
-    }else{
-
-     document.getElementById("gallery").style.display = "none";
-
-document.getElementById("castleScene").style.display = "block";   
-        
-
+    document.getElementById("gallery").style.display = "none";
+    document.getElementById("castleScene").style.display = "block";
 
 }
+
+}   // <-- Ye nextPhoto() ko close karega
+
 function helpPrince(){
+    
 
     const hair = document.getElementById("hair");
     const prince = document.getElementById("prince");
