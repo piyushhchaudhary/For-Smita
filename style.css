@@ -354,3 +354,72 @@ transform:translateY(0) rotate(-3deg);
 }
 
 }
+/* ---------- CASTLE ---------- */
+
+#castleScene{
+    display:none;
+    position:fixed;
+    inset:0;
+    background:#ffd9e8;
+    overflow:hidden;
+    z-index:20;
+}
+
+#castle{
+    position:absolute;
+    right:70px;
+    bottom:120px;
+    font-size:170px;
+}
+
+#princess{
+    position:absolute;
+    right:115px;
+    top:150px;
+    font-size:45px;
+}
+
+#hair{
+    position:absolute;
+    right:128px;
+    top:185px;
+
+    width:8px;
+    height:0;
+
+    background:gold;
+    border-radius:20px;
+
+    transition:1.8s;
+}
+
+#prince{
+    position:absolute;
+    left:70px;
+    bottom:80px;
+    font-size:45px;
+
+    transition:4s linear;
+}
+
+#helpBtn{
+
+    position:absolute;
+
+    left:50%;
+    bottom:40px;
+
+    transform:translateX(-50%);
+
+    border:none;
+
+    padding:14px 35px;
+
+    border-radius:30px;
+
+    background:#ff6ea8;
+
+    color:white;
+
+    font-size:18px;
+}
