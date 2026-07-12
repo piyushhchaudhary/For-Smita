@@ -173,3 +173,30 @@ function startHeartRain(){
     },250);
 
         }
+// ---------------- REEL SCENE ----------------
+
+function showReel(){
+
+    // One More Scene hide
+    document.getElementById("oneMoreScene").style.display = "none";
+
+    // Reel Scene show
+    document.getElementById("reelScene").style.display = "flex";
+
+    // Video play
+    const video = document.getElementById("loveReel");
+
+    video.play();
+
+    // Video khatam hone par Final Scene
+    video.onended = function(){
+
+        document.getElementById("reelScene").style.display = "none";
+
+        document.getElementById("finalScene").style.display = "flex";
+
+        startHeartRain();
+
+    };
+
+}
