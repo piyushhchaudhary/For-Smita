@@ -67,6 +67,7 @@ animation:welcomeGlow 2.5s ease-in-out infinite alternate;
     display:none;
     justify-content:center;
     align-items:center;
+    flex-direction:column;
 
     z-index:3;
 }
