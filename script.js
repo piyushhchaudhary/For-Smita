@@ -82,13 +82,12 @@ document.getElementById("gallery").style.display = "flex";
 
 }
 const photos = [
-    "images/smita1.jpg",
-    "images/smita2.jpg",
-    "images/smita3.jpg",
-    "images/smita4.jpg",
-    "images/smita5.jpg"
+    "smita1.jpg",
+    "smita2.jpg",
+    "smita3.jpg",
+    "smita4.jpg",
+    "smita5.jpg"
 ];
-
 const captions = [
     "It all started with a smile I couldn't forget. ❤️",
     "Some people become special without even trying. 🌸",
