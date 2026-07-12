@@ -68,6 +68,13 @@ function typeLetter() {
 
         if (index >= message.length) {
             clearInterval(typing);
+            setTimeout(() => {
+
+    document.getElementById("letter").style.display = "none";
+
+    document.getElementById("gallery").style.display = "flex";
+
+}, 2000);
         }
 
     }, 40);
