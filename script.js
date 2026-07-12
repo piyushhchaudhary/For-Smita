@@ -108,9 +108,9 @@ function nextPhoto(){
 
         document.getElementById("caption").innerHTML = captions[currentPhoto];
 }else{
-
-    document.getElementById("gallery").style.display = "none";
-    document.getElementById("castleScene").style.display = "block";
+document.getElementById("gallery").style.display = "none";
+document.getElementById("proposalScene").style.display = "flex";
+    
 
 }
 
