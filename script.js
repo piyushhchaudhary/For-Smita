@@ -80,3 +80,40 @@ function typeLetter() {
     }, 40);
 
 }
+const photos = [
+    "images/smita1.jpg",
+    "images/smita2.jpg",
+    "images/smita3.jpg",
+    "images/smita4.jpg",
+    "images/smita5.jpg"
+];
+
+const captions = [
+    "It all started with a smile I couldn't forget. ❤️",
+    "Some people become special without even trying. 🌸",
+    "Every picture of yours makes my day brighter. ✨",
+    "You became my favorite thought. 💖",
+    "And now... there's something I want to ask you. ❤️"
+];
+
+let currentPhoto = 0;
+
+function nextPhoto(){
+
+    currentPhoto++;
+
+    if(currentPhoto < photos.length){
+
+        document.getElementById("photo").src = photos[currentPhoto];
+
+        document.getElementById("caption").innerHTML = captions[currentPhoto];
+
+    }else{
+
+        document.getElementById("gallery").style.display = "none";
+
+        // Agle step me proposal show karenge
+
+    }
+
+}
