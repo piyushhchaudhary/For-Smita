@@ -70,7 +70,7 @@ function typeLetter() {
             clearInterval(typing);
             setTimeout(() => {
 
-    document.getElementById("letter").style.display = "none";
+   // document.getElementById("letter").style.display = "none";
 
     document.getElementById("gallery").style.display = "block";
 
