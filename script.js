@@ -191,6 +191,8 @@ function showReel(){
     const video = document.getElementById("loveReel");
 
     video.play();
+    video.controls = false;
+video.muted = false;
 
     // Video khatam hone par Final Scene
     video.onended = function(){
