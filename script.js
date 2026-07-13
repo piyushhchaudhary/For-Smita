@@ -24,7 +24,11 @@ function openEnvelope() {
     const letter = document.getElementById("letter");
 
     envelope.classList.add("open");
+const music = document.getElementById("bgMusic");
 
+music.volume = 0.35;
+
+music.play();
     setTimeout(() => {
 
         envelope.style.display = "none";
