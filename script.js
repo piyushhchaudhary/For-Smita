@@ -238,3 +238,32 @@ function startConfetti(){
     },120);
 
 }
+function showReel(){
+
+    document.getElementById("oneMoreScene").style.display = "none";
+
+    document.getElementById("reelScene").style.display = "flex";
+
+    // Agar background music hai to band kar do
+    const music = document.getElementById("bgMusic");
+    if(music){
+        music.pause();
+    }
+
+    // Reel play
+    const video = document.getElementById("loveReel");
+    video.play();
+
+    // Reel khatam hone ke baad
+    video.onended = function(){
+
+        document.getElementById("reelScene").style.display = "none";
+
+        document.getElementById("finalScene").style.display = "flex";
+
+        startHeartRain();
+        startConfetti();
+
+    };
+
+}
