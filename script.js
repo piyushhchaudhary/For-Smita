@@ -190,7 +190,19 @@ function showReel(){
     // Video play
     const video = document.getElementById("loveReel");
 
+    document.querySelector(".reelCard").style.display = "none";
+
+document.getElementById("loadingText").style.display = "block";
+
+setTimeout(function(){
+
+    document.getElementById("loadingText").style.display = "none";
+
+    document.querySelector(".reelCard").style.display = "block";
+
     video.play();
+
+},1500);
     video.controls = false;
 video.muted = false;
 
