@@ -250,9 +250,28 @@ function showReel(){
 
     // Agar background music hai to band kar do
     const music = document.getElementById("bgMusic");
-    if(music){
-        music.pause();
-    }
+
+if(music){
+
+    const fade = setInterval(() => {
+
+        if(music.volume > 0.05){
+
+            music.volume -= 0.05;
+
+        }else{
+
+            clearInterval(fade);
+
+            music.pause();
+
+            music.volume = 0.35;
+
+        }
+
+    },100);
+
+}
 
     // Reel play
     const video = document.getElementById("loveReel");
